@@ -10,23 +10,42 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         #readme-content {
             border: 1px solid #ddd;
             padding: 20px;
             border-radius: 5px;
             background-color: #f9f9f9;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>欢迎访问半两商品期货交易计算器主页</h1>
-    <p>点击以下链接下载计算器：</p>
+    <div class="container">
+        <h1>欢迎访问半两商品期货交易计算器主页</h1>
+        <p>点击以下链接下载计算器：</p>
         <a href="http://pan.baidu.com/download/123456789" target="_blank">百度云盘下载</a>
-    <p>...Readme...</p>
-    <!-- README.md 内容展示区域 -->
-    <div id="readme-content">载入...README.md...</div>
+        <p>...Readme...</p>
+        <!-- README.md 内容展示区域 -->
+        <div id="readme-content">载入...README.md...</div>
+    </div>
     <script>
         // 使用 Fetch API 获取 README.md 文件内容并使用 marked.js 渲染
         fetch('README.md')
