@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My GitHub Project</title>
+    <!-- 引入 marked.js 库 -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        #readme-content {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to My GitHub Project</h1>
     <p>Click the link below to view the README.md file:</p>
-    <div id="readme-content"></div>
+    <!-- README.md 内容展示区域 -->
+    <div id="readme-content">Loading README.md...</div>
     <script>
+        // 使用 Fetch API 获取 README.md 文件内容并使用 marked.js 渲染
         fetch('README.md')
             .then(response => response.text())
             .then(text => {
-                document.getElementById('readme-content').innerHTML = marked(text);
+                document.getElementById('readme-content').innerHTML = marked.parse(text);
+            })
+            .catch(error => {
+                document.getElementById('readme-content').innerHTML = 'Error loading README.md';
+                console.error('Error fetching README.md:', error);
             });
     </script>
 </body>
