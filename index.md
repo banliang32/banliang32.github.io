@@ -1,9 +1,9 @@
 ---
-title: My GitHub Project
+title: 半两商品期货交易计算器
 ---
 
-# Welcome to My GitHub Project
+# 欢迎访问半两商品期货交易计算器主页
 
-Click the link below to view the README.md file:
+README.md
 
 [View README.md](README.md)
