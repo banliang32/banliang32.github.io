@@ -136,7 +136,7 @@
 拉框中，这时只需要用户滚动鼠标滚轮就能选择自己需要的交易品种了
 至此，程序并不会删除注册表中用户已经自选的品种，除非你点击了【选】
 这个按钮，如下图：
-    - ![](https://cdn.jsdelivr.net/gh/startMakingMoney/pic@main/img/SelectionofTradingVariety3.png)
+    - ![](https://cdn.jsdelivr.net/gh/startMakingMoney/pic@main/img/SelectionofTradingVariety4.png)
 #### 3.2.3 日盘与夜盘
 - 用户选择交易品种后，程序会在【选】按钮旁边显示一个图标，用来表示该
 品种是日盘还是夜盘，如下图
