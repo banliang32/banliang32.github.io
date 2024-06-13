@@ -46,24 +46,29 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1 align-items: center;>欢迎访问半两商品期货交易计算器主页</h1>
-        <p align-items: center;>点击以下链接下载计算器：</p>
-        <a href="http://pan.baidu.com/download/123456789" target="_blank"; align-items: center;>百度云盘下载</a>
-        <!-- README.md 内容展示区域 -->
-        <div id="readme-content">载入...README.md...</div>
+<div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <h1>欢迎访问半两商品期货交易计算器主页</h1>
+    <p>点击以下链接下载计算器：</p>
+    <a href="http://pan.baidu.com/download/123456789" target="_blank">百度云盘下载</a>
+    <!-- README.md 内容展示区域 -->
+    <div id="readme-content">
+        <!-- 这里假设你有一个函数可以将Markdown转换为HTML -->
+        <script>
+            function convertMarkdownToHtml(markdown) {
+                // 这里可以使用像marked.js这样的库来转换Markdown到HTML
+                // 例如：return marked(markdown);
+                return markdown; // 示例中直接返回Markdown，实际应用中需要替换为转换函数
+            }
+
+            // 假设你有一个包含README.md内容的变量
+            var readmeContent = `# 标题
+## 子标题
+这里是README.md的内容...`;
+
+            // 将Markdown转换为HTML并插入到div中
+            document.getElementById('readme-content').innerHTML = convertMarkdownToHtml(readmeContent);
+        </script>
     </div>
-    <script>
-        // 使用 Fetch API 获取 README.md 文件内容并使用 marked.js 渲染
-        fetch('README.md')
-            .then(response => response.text())
-            .then(text => {
-                document.getElementById('readme-content').innerHTML = marked.parse(text);
-            })
-            .catch(error => {
-                document.getElementById('readme-content').innerHTML = 'Error loading README.md';
-                console.error('Error fetching README.md:', error);
-            });
-    </script>
+</div>
 </body>
 </html>
