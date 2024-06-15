@@ -229,7 +229,7 @@
     - ![](https://cdn.jsdelivr.net/gh/startMakingMoney/pic@main/img/DrawAnEarlyWarningLine1.png)
 - 点击买或卖按钮后，请将手离开鼠标，程序将自动在赢顺 6 上开始画预警线
     - ![](https://cdn.jsdelivr.net/gh/startMakingMoney/pic@main/img/DrawAnEarlyWarningLine2.png)    
-- > 赢顺 6 只支持当前价上和下各画两条警示线，所以在计算历史数据时，最好不要使用画警示线的功能
+- > 注意：赢顺 6 只支持当前价上和下各画两条警示线，所以在计算历史数据时，最好不要使用画警示线的功能
 ### 3.10 操作记录
 - 程序会将用户把次计算的关键数据写入到一个列表控件中，方便用户查看程序提供了一个导出接口，方便用户将计算结果数据导出到一个 CSV 文件中，如图
     - ![](https://cdn.jsdelivr.net/gh/startMakingMoney/pic@main/img/OperationRecord.png)
