@@ -104,9 +104,7 @@
 - 程序运行在 Windows 系统中。
 ### 2.3 系统要求
 - Windows 2003 以上系统，内存 1GB 以上，硬盘 5 GB 以上。
-### 2.4 版权证书
-- ![](https://cdn.jsdelivr.net/gh/startMakingMoney/pic@main/img/Certificate.png)
-### 2.5 免责声明
+### 2.4 免责声明
 - 1、风险提示：软件只是一个交易辅助软件，不是量化软件，没有任何决策功能，不能直接参与交易，同时，软件不收集除机器码（用于授权）之外的任何用户信息；
 - 2、责任限制：开发者不对软件的性能、准确性、可靠性或任何形式的损害负责；
 - 3、使用条件：用户不得用于非法目的、不得进行逆向工程、不能使用破解软件；
@@ -231,7 +229,7 @@
     - ![](https://cdn.jsdelivr.net/gh/startMakingMoney/pic@main/img/DrawAnEarlyWarningLine1.png)
 - 点击买或卖按钮后，请将手离开鼠标，程序将自动在赢顺 6 上开始画预警线
     - ![](https://cdn.jsdelivr.net/gh/startMakingMoney/pic@main/img/DrawAnEarlyWarningLine2.png)    
-
+- > 赢顺 6 只支持当前价上和下各画两条警示线，所以在计算历史数据时，最好不要使用画警示线的功能
 ### 3.10 操作记录
 - 程序会将用户把次计算的关键数据写入到一个列表控件中，方便用户查看程序提供了一个导出接口，方便用户将计算结果数据导出到一个 CSV 文件中，如图
     - ![](https://cdn.jsdelivr.net/gh/startMakingMoney/pic@main/img/OperationRecord.png)
