@@ -53,8 +53,7 @@
         <!-- README.md 内容展示区域 -->
         <div id="readme-content"></div>
     </div>
-    <script>
-        // 使用 Fetch API 获取 README.md 文件内容并使用 marked.js 渲染
+    <script>        
         fetch('README.md')
             .then(response => response.text())
             .then(text => {
